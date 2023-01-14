@@ -1,7 +1,6 @@
 <script>
     export let updateScreen
     export let screens
-    export let screen
     import Logo from "./Logo.svelte";
 </script>
 
@@ -10,33 +9,6 @@
     <Logo {screens} {updateScreen} /> <h2 class=header1>Motoko Bootcamp Prep</h2>
   </div>
 
-<nav>
-
-    <div
-      class="page-link {screen == screens.BOOTCAMP ? 'selected' : ''}"
-      on:click={() => updateScreen(screens.BOOTCAMP)}
-    >
-      Bootcamp
-    </div>
-    <div
-    class="page-link {screen == screens.MOTOKO ? 'selected' : ''}"
-    on:click={() => updateScreen(screens.MOTOKO)}
-  >
-      Motoko
-  </div>
-  <div
-  class="page-link {screen == screens.JAVASCRIPT ? 'selected' : ''}"
-  on:click={() => updateScreen(screens.JAVASCRIPT)}
->
-    Javascript
-</div>
-<div
-class="page-link {screen == screens.HTMLCSS ? 'selected' : ''}"
-on:click={() => updateScreen(screens.HTMLCSS)}
->
-  HTML&CSS
-</div>
- 
 </header>
 
 <style lang="scss">

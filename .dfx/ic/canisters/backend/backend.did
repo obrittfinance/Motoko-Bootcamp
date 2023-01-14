@@ -1,4 +1,3 @@
 service : {
-  getCurrentValue: () -> (nat) query;
-  incrementValue: () -> (nat);
+  greet: (text) -> (text);
 }
