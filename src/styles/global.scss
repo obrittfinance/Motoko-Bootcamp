@@ -1,0 +1,22 @@
+@use "reset.scss" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(28, 24, 24);
+  font-size: 30px;
+}
+
+h1 {
+  color: #74ff75;
+  font-size: 25px;
+  text-transform: uppercase;
+  &.pink {
+    color: #fa51d3;
+  }
+}
+
+.hea {
+  font-size: 30px;
+}
